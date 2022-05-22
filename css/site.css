@@ -1,8 +1,8 @@
 :root{
-    --primary-color: #422aa2ac;
-    --secondary-color: #00c3efce;
-    --dark-color: #152e5c;
-    --white-color: #dfeff3;
+    --primary-color: #69b913ac;
+    --secondary-color: #efdf00db;
+    --dark-color: #5c4f15;
+    --white-color: #f3f0df;
 }
 .odd{
  font-weight: 100;
@@ -36,8 +36,8 @@ nav{
 }
 .text-gradient.text-primary {
     background-image: linear-gradient(
-10deg
-,#1b1979,#00c3ff);
+40deg
+,var(--secondary-color),var(--primary-color));
 }
 .text-gradient {
     background-clip: text;
@@ -86,7 +86,7 @@ nav{
     color: #fff;
 }
 .bg-gradient-primary{
-    background-image: linear-gradient( 310deg, #ca3e28,#ffaa00);
+    background-image: linear-gradient( 310deg, var(--secondary-color),var(--primary-color));
 }
 
 .btn {

@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>app name: a coding project by aidé oropeza</title>
+    <title>No Lemon, No Melon: a coding project by aidé oropeza</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,7 +20,7 @@
     <!--Nav Section-->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand logoFont" href="index.html"><img src="img/ocblue.png" width= "70px" class="d-inline-block align-text-top"> app name </a>
+            <a class="navbar-brand logoFont" href="index.html"><img src="img/ocblue.png" width= "70px" class="d-inline-block align-text-top"> No Lemon, No Melon </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,10 +37,10 @@
                         <a class="nav-link" href="code.html">The Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/aoropeza31/Hundo" target="_blank">Git Repo</a>
+                        <a class="nav-link" href="https://github.com/aoropeza31/word-reverse" target="_blank">Git Repo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://aide-portfolio.netlify.app/" target="_blank">About</a>
+                        <a class="nav-link" href="https://orotechstore.com/" target="_blank">About</a>
                     </li>
                 </ul>
             </div>
@@ -48,9 +48,44 @@
     </nav>
     <!--Main Section-->
     <main class="flex-shrink-0">
-        <div class="container">
-
-        </div>
+        <main class="flex-shrink-0">
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col-lg-6 col">
+                        <h2 class="border-1 border-bottom fw-bold text-gradient text-primary 1h-1 mb-3">
+                            No Lemon, No Melon: a coding project
+                        </h2>
+                        <h4 class="lead pb-4">
+                            <p>No Lemon, No Melon is a <span class="text-gradient text-primary fw-bold">palindrome</span>. A palindrome is a word, phrase, or sequence that reads the same backward as forward. This is a program that checks if the phrase entered is a <span class="text-gradient text-primary fw-bold">palindrome</span>.</p>
+                        </h4>
+                    </div>
+                    <div class="col-lg-6 col mt-lg-0 mt-5 ps-lg-0 ps-0">
+                        <div class="card d-flex justify-content-center p-4 shadow-lg">
+                            <div class="text-center">
+                                <h3 class="fw-bold text-gradient text-primary">
+                                    Enter a word or phrase to check
+                                </h3>
+                            </div>
+                            <div class="card card-plain">
+                                <form role = "form" class="row gx-3 gy-2">
+                                    <div class="col mt-4">
+                                        <input type="text" id="userPhrase" class="form-control" placeholder="Enter a word or phrase :)" aria-label="Enter a word or phrase" >
+                                    </div>
+                                    <div class="col-12 mt-3 text-center"><button type="button" id="btnSubmit" class="btn bg-gradient-primary">Check</button></div>
+                                    <div class="alert alert-light mt-5 invisible fade show" id="alert" role="alert">
+                                        <h4 class="alert-heading">Your word/phrase has been checked</h4>
+                                        <hr>
+                                        <p class="mb-0" id="msg"><!--Insert message here--></p>
+                                    </div>
+                                </form>
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
     </main>
     <!-- === Footer Section === -->
     <footer class="footer py-10">
@@ -80,6 +115,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
-    <script src="js/site.js"></script> 
+    <script src="js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getPhrase);
+    </script> 
 </body>
 </html>
