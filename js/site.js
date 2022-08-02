@@ -4,13 +4,15 @@ function getPhrase(){
     document.getElementById("alert").classList.add("invisible");
     const regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
 
-
+    //get user string from the page
     let userPhrase = document.getElementById("userPhrase").value;
+    //check for a palindrome
     let  isPalindrome =  checkIfPalindrome(userPhrase.toLowerCase().replace(/\s+/g, '').replace(regex, ''));
-
+    //display palindrome
     displayPalindrome(isPalindrome);
 }
 
+//check if string is a palindrome
 function checkIfPalindrome(userPhrase){
 
     //reverse string
@@ -31,6 +33,7 @@ for (let index = userPhrase.length-1; index >= 0; index--) {
 
 }
 
+//display a message to the string
 function displayPalindrome(isPalindrome){
     if(isPalindrome){
         let result = "is a palindrome";
